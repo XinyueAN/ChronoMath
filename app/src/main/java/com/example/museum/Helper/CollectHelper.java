@@ -204,36 +204,70 @@ public class CollectHelper extends SQLiteOpenHelper {
 
     public List<FigureBean> getWW(String userMail, String type) {
         SQLiteDatabase db = this.getReadableDatabase();
-        List<FigureBean> collectList = new ArrayList<>();
+        List<FigureBean> figureList = new ArrayList<>(); // 列表名改为 figureList 更清晰
 
         // 定义查询条件
         String selection = COLUMN_USER_MAIL + " = ? AND " + COLUMN_TYPE + " = ?";
         String[] selectionArgs = {userMail, type};
 
         // 执行查询
+        // 注意：这里假设你只需要 FigureBean 中有的字段对应的数据，如果 CollectBean 字段更多，可能会丢失信息
         Cursor cursor = db.query(TABLE_NAME, null, selection, selectionArgs, null, null, null);
 
         if (cursor != null) {
+            // 获取列索引，提高效率并避免getColumnIndex在高版本API中的弃用警告
+            int imgPathColumnIndex = cursor.getColumnIndex(COLUMN_IMG_PATH);
+            int nameColumnIndex = cursor.getColumnIndex(COLUMN_NAME);
+            // int numColumnIndex = cursor.getColumnIndex(COLUMN_NUM); // num 不是 FigureBean 构造函数的参数
+            int eraColumnIndex = cursor.getColumnIndex(COLUMN_ERA);
+            // int categoryColumnIndex = cursor.getColumnIndex(COLUMN_CATEGORY); // category 不是 FigureBean 构造函数的参数
+            // int regionColumnIndex = cursor.getColumnIndex(COLUMN_REGION); // region 不是 FigureBean 构造函数的参数
+            int descriptionColumnIndex = cursor.getColumnIndex(COLUMN_DESCRIPTION); // 描述是 FigureBean 构造函数的参数
+
+
             while (cursor.moveToNext()) {
-                // 从 Cursor 中读取数据
-                String collect = cursor.getString(cursor.getColumnIndex(COLUMN_COLLECT));
-                String imgPath = cursor.getString(cursor.getColumnIndex(COLUMN_IMG_PATH));
-                String name = cursor.getString(cursor.getColumnIndex(COLUMN_NAME));
-                String num = cursor.getString(cursor.getColumnIndex(COLUMN_NUM));
-                String era = cursor.getString(cursor.getColumnIndex(COLUMN_ERA));
-                String category = cursor.getString(cursor.getColumnIndex(COLUMN_CATEGORY));
+                // 从 Cursor 中读取数据，并赋值给对应变量
+                // 这些变量需要在循环内部声明，以便每次迭代使用新的数据
+                String mainImageResId; // 对应 Bean 中的 mainImageResId (String 类型)
+                String name;       // 对应 Bean 中的 name
+                String price;      // 对应 Bean 中的 price (数据库中没有，需给默认值)
+                String author;     // 对应 Bean 中的 author (数据库中没有，需给默认值)
+                String description; // 对应 Bean 中的 description
+                String era;        // 对应 Bean 中的 era
+
+
+                // 从 Cursor 读取数据
+                // 检查列索引是否有效，防止列不存在导致异常
+                mainImageResId = (imgPathColumnIndex != -1) ? cursor.getString(imgPathColumnIndex) : ""; // 使用 imgPath 作为 mainImageResId (String)
+                name = (nameColumnIndex != -1) ? cursor.getString(nameColumnIndex) : "";
+                era = (eraColumnIndex != -1) ? cursor.getString(eraColumnIndex) : "";
+                description = (descriptionColumnIndex != -1) ? cursor.getString(descriptionColumnIndex) : ""; // **这里之前漏读了，现在加上**
+
+
+                // 为 FigureBean 构造函数中数据库表里没有的字段提供默认值（空字符串）
+                price = "";   // price 不在数据库表中
+                author = "";  // author 不在数据库表中
+
 
                 // 创建 FigureBean 实例
-                FigureBean figureBean = new FigureBean(imgPath, name, num,  category,era);
+                // 确保参数顺序和类型与 FigureBean 构造函数完全匹配
+                FigureBean figureBean = new FigureBean(
+                        mainImageResId, // String (来自 imgPath)
+                        name,           // String
+                        price,          // String (默认值)
+                        author,         // String (默认值)
+                        description,    // String (来自 description 列)
+                        era             // String (来自 era 列)
+                );
 
                 // 将 FigureBean 添加到列表中
-                collectList.add(figureBean);
+                figureList.add(figureBean);
             }
             cursor.close();
         }
         db.close();
 
-        return collectList;
+        return figureList; // 返回 FigureBean 列表
     }
 
 

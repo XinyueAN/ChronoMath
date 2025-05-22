@@ -3,50 +3,56 @@ package com.example.museum.Bean;
 import java.io.Serializable;
 
 public class FigureBean implements Serializable {
-    private String imagePath;
+    private String imgName;
     private String name;
-    private String num;
-    private String category;
+    private String price;
+    private String author;
+    private String description;
     private String era;
 
-    public FigureBean(String imagePath, String name, String num, String category, String era) {
-        this.imagePath = imagePath;
+    public FigureBean(String imgName, String name, String price, String author, String description, String era) {
+        this.imgName = imgName;
         this.name = name;
-        this.num = num;
-        this.category = category;
+        this.price = price;
+        this.author = author;
+        this.description = description;
         this.era = era;
     }
 
-    public String getImagePath() {
-        return imagePath;
-    }
+    public String getImgName() { return imgName; }
 
-    public void setImagePath(String imagePath) {
-        this.imagePath = imagePath;
+    public void setImgName(String imgName) {
+        this.imgName = imgName;
     }
 
     public String getName() {
         return name;
     }
 
+    public void setPrice(String name) {
+        this.price = price;
+    }
+    public String getPrice() {
+        return price;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
 
-    public String getNum() {
-        return num;
+    public String getAuthor() {
+        return author;
     }
 
-    public void setNum(String num) {
-        this.num = num;
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+    public String getDescription() {
+        return description;
     }
 
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
+    public void setDescription(String author) {
+        this.description = description;
     }
 
     public String getEra() {

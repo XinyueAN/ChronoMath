@@ -1,135 +1,58 @@
 [
   {
-    "imagePath": "https://shuziwenwu-1259446244.cos.ap-beijing.myqcloud.com/relic/c4f40ff9f0e945038091a804982107d2/aca692a24fda4feeb882eb73a386f8a8.png",
-    "name": "康熙款豇豆红釉菊瓣瓶",
-    "num": "故00148273",
-    "category": "陶瓷",
-    "era": "清康熙"
+    "imgName": "jzss",
+    "name": "《九章算术》",
+    "price": "¥ 298",
+    "author": "张苍、耿寿昌",
+    "description": "中国古代最重要的数学著作之一，成书于汉代，系统总结了战国到汉代数学的成就。全书共有方田、粟米、衰分、少广、商功、均输、盈不足、方程、勾股等九个章节。",
+    "era": "西汉"
   },
   {
-    "imagePath": "https://shuziwenwu-1259446244.cos.ap-beijing.myqcloud.com/relic/0422ba7a77764fe49555405ae21ff0ac/842507b14a854f2a9b01af6c27c0d612.png",
-    "name": "矾红地描金云龙纹油棰瓶",
-    "num": "新00017071",
-    "category": "陶瓷",
-    "era": "清康熙"
+    "imgName": "zbsj_2",
+    "name": "《周髀算经》",
+    "author": "不详",
+    "price": "¥ 99",
+    "description": "《周髀算经》原名《周髀》，算经的十书之一，是古老的天文学和数学著作，主要阐明当时的盖天说和四分历法。唐初规定它为国子监明算科的教材之一，故改名《周髀算经》。",
+    "era": "公元前1世纪"
   },
   {
-    "imagePath": "https://shuziwenwu-1259446244.cos.ap-beijing.myqcloud.com/relic/12078915cb0d4224b60a37ed275dcc7c/a0610fbbd8d44badbae8e25f0262d7d2.png",
-    "name": "王原祁仿古山水册",
-    "num": "故00004870-1/10",
-    "category": "绘画",
-    "era": "清"
+    "imgName": "zqjsj",
+    "name": "《张丘建算经》",
+    "price": "¥ 98",
+    "author": "张丘建",
+    "description": "《张丘建算经》，中国古代数学著作。（约公元5世纪）现传本有92问，比较突出的成就有最大公约数与最小公倍数的计算，各种等差数列问题的解决、某些不定方程问题求解等。",
+    "era": "北魏"
   },
   {
-    "imagePath": "https://shuziwenwu-1259446244.cos.ap-beijing.myqcloud.com/relic/3af6638b65214fb7ab09dbd959fa4895/70ec97c2c94044dc8f526844bb4eb42d.png",
-    "name": "清人画孝仪纯皇后朝服像轴",
-    "num": "故00006521",
-    "category": "绘画",
-    "era": "清"
+    "imgName": "hdsj",
+    "name": "《海岛算经》",
+    "price": "¥ 39",
+    "author": "刘徽",
+    "description": "《海岛算经》是魏晋时期刘徽所著的一部测量数学著作。也是中国学者编撰的最早一部测量数学著作，亦为地图学提供了数学基础。",
+    "era": "魏晋"
   },
   {
-    "imagePath": "https://shuziwenwu-1259446244.cos.ap-beijing.myqcloud.com/relic/a7774ad9ac404972b46b26971c868254/de47d3bbcec8451bbf2cdf799d8dae99.png",
-    "name": "清拓魏刘懿墓志册",
-    "num": "新00045338",
-    "category": "碑帖",
-    "era": "清"
+    "imgName": "szsj",
+    "name": "《孙子算经》",
+    "price": "¥ 298",
+    "author": "不详",
+    "description": "《孙子算经》是中国古代重要的数学著作，成书大约在四、五世纪。传本的《孙子算经》共三卷。卷上叙述算筹记数的纵横相间制度和筹算乘除法，卷中举例说明筹算分数算法和筹算开平方法。卷下第31题，可谓是后世“鸡兔同笼”题的始祖，后来传到日本，变成“鹤龟算”。",
+    "era": "魏晋南北朝"
   },
   {
-    "imagePath": "https://shuziwenwu-1259446244.cos.ap-beijing.myqcloud.com/relic/099955d1f5f340a88301c8eaec332b34/18c52085c78d4ab5b256f595ef7cd236.png",
-    "name": "明拓缩本兰亭帖",
-    "num": "故00004685",
-    "category": "碑帖",
-    "era": "明"
+    "imgName": "xhysj",
+    "name": "《夏侯阳算经》",
+    "price": "¥ 238",
+    "author": "夏侯阳",
+    "description": "《夏侯阳算经》是晋代夏侯阳撰数学著作。北宋元丰九年（1084年）所刻，唐中叶的一部算书。",
+    "era": "晋代"
   },
   {
-    "imagePath": "https://shuziwenwu-1259446244.cos.ap-beijing.myqcloud.com/relic/ee275fd6a67b4753bc9673940db4dd18/bd67c171eb6b49849a39509ce7527259.png",
-    "name": "士父钟",
-    "num": "新00054918",
-    "category": "铜器",
-    "era": "西周"
-  },
-  {
-    "imagePath": "https://shuziwenwu-1259446244.cos.ap-beijing.myqcloud.com/relic/3c94861eb8464bdeb290648816b9dda5/bdaf2a5b49d148f2ab0fb004928a54d4.png",
-    "name": "蟠螭纹镈",
-    "num": "新00068941",
-    "category": "铜器",
-    "era": "战国"
-  },
-  {
-    "imagePath": "https://shuziwenwu-1259446244.cos.ap-beijing.myqcloud.com/relic/97e17b3dfc704b939016f48eb2bf5433/532dabbe0ee34d83ace90242feaf4700.png",
-    "name": "金胎嵌画珐琅执壶",
-    "num": "故00011448",
-    "category": "金银器",
-    "era": "清乾隆"
-  },
-  {
-    "imagePath": "https://shuziwenwu-1259446244.cos.ap-beijing.myqcloud.com/relic/d20597cbc2f541f4b297763e24e4e792/e676e6d81dda436ba6c49e2ac420821e.png",
-    "name": "乾隆款剔红云龙纹碗",
-    "num": "故00109173",
-    "category": "漆器",
-    "era": "清乾隆"
-  },
-  {
-    "imagePath": "https://shuziwenwu-1259446244.cos.ap-beijing.myqcloud.com/relic/035df5b3dd954fb9b31279e02b928433/af6038dceb814949b65e92e04a19b335.png",
-    "name": "嘉靖款剔红万年如意龙凤纹八方盆",
-    "num": "故00107909",
-    "category": "漆器",
-    "era": "明嘉靖"
-  },
-  {
-    "imagePath": "https://shuziwenwu-1259446244.cos.ap-beijing.myqcloud.com/relic/9fc598c7b31741fb8f4a057e0cf6415f/f3a15bb4d4c64cfb9677990eadb066ea.png",
-    "name": "乾隆款掐丝珐琅海水云龙纹水丞",
-    "num": "故00116199",
-    "category": "珐琅器",
-    "era": "清乾隆"
-  },
-  {
-    "imagePath": "https://shuziwenwu-1259446244.cos.ap-beijing.myqcloud.com/relic/a6bce27b7faf40f08e73d80caab5346b/5f0b5818bd344086a918098698a7fbee.png",
-    "name": "乾隆款掐丝珐琅飞龙纹尊",
-    "num": "故00117191",
-    "category": "珐琅器",
-    "era": "清乾隆"
-  },
-  {
-    "imagePath": "https://shuziwenwu-1259446244.cos.ap-beijing.myqcloud.com/relic/24936c7900a14cdb9932fbcac4330b1d/6c218cc5ffaf4b768c12ffaa62bbc10a.png",
-    "name": "玉龙",
-    "num": "新00200399",
-    "category": "玉石器",
-    "era": "新石器时代"
-  },
-  {
-    "imagePath": "https://shuziwenwu-1259446244.cos.ap-beijing.myqcloud.com/relic/5b5edd130a6d4939a2a683a51ccf5049/0301120703fa4643a8bbe8e3e29ae906.png",
-    "name": "青玉十二辰-龙",
-    "num": "故00100278-5/12",
-    "category": "玉石器",
-    "era": "清"
-  },
-  {
-    "imagePath": "https://shuziwenwu-1259446244.cos.ap-beijing.myqcloud.com/relic/5f501ad9a167436ba8ec4d8ebdb1b24c/77dce108371c45dfaf493f2009536e11.png",
-    "name": "泥人张塑彩绘禄星像",
-    "num": "故00000012",
-    "category": "雕塑",
-    "era": "清"
-  },
-  {
-    "imagePath": "https://shuziwenwu-1259446244.cos.ap-beijing.myqcloud.com/relic/226c9c55faed465fab47f2481b8d812c/b6bf0744810f40ea986159b72411f3aa.png",
-    "name": "泥人张塑彩绘寿星像",
-    "num": "故00000013",
-    "category": "雕塑",
-    "era": "清"
-  },
-  {
-    "imagePath": "https://shuziwenwu-1259446244.cos.ap-beijing.myqcloud.com/relic/d93e0ca07d9d4f6f8bef12d5331d8213/3c5d26ba0aee4482a0670789bcfe0e5c.png",
-    "name": "明黄色纳纱绣彩云金龙纹男单朝袍",
-    "num": "故00041899",
-    "category": "织绣",
-    "era": "清雍正"
-  },
-  {
-    "imagePath": "https://shuziwenwu-1259446244.cos.ap-beijing.myqcloud.com/relic/aae31521c16446b489a8a248b4211cf7/02e723e9c3f447a786a706267e660811.png",
-    "name": "石青色彩云金龙纹妆花纱男夹朝袍",
-    "num": "故00041728",
-    "category": "织绣",
-    "era": "清康熙"
+    "imgName": "ssjz",
+    "name": "《数书九章》",
+    "price": "¥ 79",
+    "author": "秦九韶",
+    "description": "《数书九章》是南宋数学家秦九韶所著的数学著作。最初叫《数术大略》或《数学大略》（9卷），分为9类，每类为一卷，包含大衍术（中国剩余定理的详细算法）、正负开方术等重要内容。",
+    "era": "南宋"
   }
 ]
