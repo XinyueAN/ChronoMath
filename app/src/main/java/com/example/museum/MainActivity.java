@@ -13,7 +13,6 @@ import com.example.museum.Fragment.LearnFragment;
 import com.example.museum.Fragment.LookFragment;
 import com.example.museum.Fragment.MineFragment;
 import com.example.museum.Fragment.RecommendedFragment;
-import com.example.museum.Fragment.SwimFragment;
 
 public class MainActivity extends AppCompatActivity {
 
